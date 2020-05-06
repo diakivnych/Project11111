@@ -1,0 +1,76 @@
+*{
+  font-size: 30px;
+  text-align: center;
+}
+.header{
+  background-color: rgba(107, 121, 122, 0.6);
+  height: 45px;
+  margin-bottom: 5px;
+  border: 2px rgb(0, 0, 0) solid;
+  text-align: right;
+  padding-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-weight: 100;
+}
+.sidebar1{
+  opacity: 0.5;
+  width: 10%;
+  background: rgb(118, 131, 248);
+  float: left;
+  height: 10000px;
+}
+.sidebar2{
+  opacity: 0.5;
+  width: 10%;
+  background: rgb(118, 131, 248);
+  float: left;
+  height: 10000px;
+}
+.content{
+  width: 77%;
+  /*background-color:rgb(255, 204, 18);*/
+  float: left;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  text-align: left;
+}
+.images{
+    width:300px;
+    height:300px;
+}
+.images:hover{
+    width: 600px;
+    transition: 3s all; 
+}
+.image:hover{
+    height: 600px;
+	transition: 3s all;
+}
+.images:hover{
+    transform: scale(1.7) rotate(360deg);
+    border-radius: 500px;
+    transition: 2s all;
+}
+.comm{
+    font-size: 25px;
+}
+.comments{
+    border: 100px green solid;
+}
+.leave_comm{
+    font-size: 25px;
+}
+.wrapper{
+    background-image: url(/static/cat2.jpg);
+}
+.content{
+    background-image: url(/static/cat1.jpg);
+    border: 2px rgb(25, 100, 80) solid;
+}
+.content_inside{
+  background-image: url(/static/cat3.jpg);
+  border: 2px rgb(25, 100, 80) solid;
+  display: inline-block;
+  width: 600px;
+}

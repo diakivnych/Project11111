@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register new person</title>
+        {% load static %}
+        <link rel=stylesheet href="{% static 'style.css' %}">
+    </head>
+    <body>
+        <form method="POST" action="/users/new_user">
+        <fieldset>
+            <legend> Register </legend>
+            <label><input name="first_name" type="text"> first_name</label><br>
+            <label><input name="last_name" type="text"> last_name</label><br>
+            <label><input name="age" type="text" required> age</label><br>
+            <label><input name="job" type="text" required> job</label><br>
+            <label><textarea name="hobby"></textarea> hobby</label><br>
+            <select name="country">
+                <option>Select your country</option>
+                <option value="Россия">Turkmenistan</option> 
+                <option value="Украина">Turkmenistan</option> 
+                <option value="Беларусь">Turkmenistan</option>
+                <option value="Беларусь">Turkmenistan</option> 
+              </select><br> 
+            <label>photo(.jpg)<input type="file" name="picture"></label><br>
+            <input type="text" id="login"><label for="qwerty"> login</label><br>
+            <input type="password" id="password"><label for="qwerty"> password</label><br>
+            <input type="submit" value="Нажимай))0)">
+        </fieldset>
+        </form>
+    </body>
+</html>

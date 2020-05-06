@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Students</title>
+        <link rel=stylesheet href="/static/style2.css/">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                    <b>  
+                        <a href="author">Вхід</a>
+                        <a href="new_user">Реєстрація</a>
+                    </b>
+            </div>
+            <div class="row">
+                <div class="sidebar1">
+                </div>
+                <div class="content">
+                    {% for user in users %}
+                    <ol>
+                        <div class="content_inside">
+                        <p><b>{{user.first_name}} {{user.last_name}}</b><br>
+                        <i>age = {{user.age}}, job = {{user.job}}, hobby = {{user.hobby}}</i></p>
+                        <p>
+                            <img class="images" src="/static/img{{user.id}}.jpg" 
+                            alt="sasats" />
+                        {% for comment in user.comment_set.all%}
+                        <ol>
+                            <div clas="comments">
+                                <div class="comm">
+                                    <b>{{comment.author_name}}</b>: {{comment.comment_text}}<br>
+                                </div>
+                            </div>
+                        </ol>
+                        {% endfor %}
+                        <br>
+                        <div class="leave_comm">
+                            <form action="{% url 'leave_comment' user.id %}" method="POST">
+                                {% csrf_token %}
+                                <b><i>Залиште коментар))0)</i></b><br>
+                                Ваш нікнейм:<br>
+                                <input type="text" name="name" required style="font-size: 25px"><br>
+                                Коментар:<br>
+                                <textarea name="text" style="font-size: 25px"></textarea><br>
+                                <button type="submit">Send to {{user.first_name}}</button><br><br>
+                            </form>
+                        </div>
+                        </p>
+                        </div>
+                    </ol>
+                    {% endfor %}
+                </div>
+                <div class="sidebar2">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+html {
+  background-color: paleturquoise;
+  font-size: 40px;
+  width: 550px;
+}
+
+body {
+  background-color: rgba(107, 121, 122, 0.6);
+  background-image: url(/static/cat1.jpg);
+  border: 2px rgb(25, 100, 80) solid;
+  padding: 20px;
+}
