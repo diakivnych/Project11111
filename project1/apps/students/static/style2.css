@@ -60,18 +60,16 @@
 .leave_comm{
     font-size: 25px;
 }
-/*
 .wrapper{
-    background-image: url(/static/cat2.jpg);
+    background-image: url(cat2.jpg);
 }
 .content{
-    background-image: url(/static/cat1.jpg);
+    background-image: url(cat1.jpg);
     border: 2px rgb(25, 100, 80) solid;
 }
 .content_inside{
-  background-image: url(/static/cat3.jpg);
+  background-image: url(cat3.jpg);
   border: 2px rgb(25, 100, 80) solid;
   display: inline-block;
   width: 600px;
 }
-*/
