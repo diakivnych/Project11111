@@ -47,9 +47,9 @@
 	transition: 3s all;
 }
 .images:hover{
-    transform: scale(1.7) rotate(360deg);
+    transform: scale(1.2) rotate(360deg);
     border-radius: 500px;
-    transition: 2s all;
+    transition: 1s all;
 }
 .comm{
     font-size: 25px;
