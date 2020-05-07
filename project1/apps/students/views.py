@@ -23,4 +23,5 @@ def leave_comment(request, user_id):
 
 	from django.utils import timezone
 	a.comment_set.create(author_name = request.POST['name'], comment_text = request.POST['text'], pub_date = timezone.now())
+	a.save()
 	return HttpResponseRedirect(reverse(all_users))
